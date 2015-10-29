@@ -29,6 +29,12 @@ Edit your Django project's settings module, and add ``paginationlinks``:
 Usage
 -----
 
+Load the template tag:
+
+.. code-block::
+
+    {% load pagination_links %}
+
 Typical usage, which shows 1 page on each end, and 1 on each side of the current page:
 
 .. code-block::
@@ -45,6 +51,8 @@ both are optional arguments:
 A more fully featured example for a site:
 
 .. code-block::
+
+    {% load pagination_links %}
 
     {% if page_obj.has_other_pages %}
         {% get_pagination_links paginator page_obj as pagination_links %}
