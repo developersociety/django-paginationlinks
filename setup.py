@@ -1,11 +1,18 @@
 #!/usr/bin/env python
-from setuptools import setup, find_packages
+from codecs import open
+
+from setuptools import find_packages, setup
+
+
+with open('README.rst', 'r', 'utf-8') as f:
+    readme = f.read()
+
 
 setup(
     name='django-paginationlinks',
     version='0.1',
     description='Django Pagination Links',
-    long_description=open('README.rst').read(),
+    long_description=readme,
     url='https://github.com/blancltd/django-paginationlinks',
     maintainer='Alex Tomkins',
     maintainer_email='alex@blanc.ltd.uk',
