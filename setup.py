@@ -14,8 +14,8 @@ setup(
     description='Django Pagination Links',
     long_description=readme,
     url='https://github.com/developersociety/django-paginationlinks',
-    maintainer='Blanc Ltd',
-    maintainer_email='studio@blanc.ltd.uk',
+    maintainer='The Developer Society',
+    maintainer_email='studio@dev.ngo',
     platforms=['any'],
     packages=find_packages(),
     classifiers=[
