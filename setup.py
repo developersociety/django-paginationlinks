@@ -13,7 +13,7 @@ setup(
     version='0.1.1',
     description='Django Pagination Links',
     long_description=readme,
-    url='https://github.com/blancltd/django-paginationlinks',
+    url='https://github.com/developersociety/django-paginationlinks',
     maintainer='Blanc Ltd',
     maintainer_email='studio@blanc.ltd.uk',
     platforms=['any'],
