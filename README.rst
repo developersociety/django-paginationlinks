@@ -21,10 +21,10 @@ Edit your Django project's settings module, and add ``paginationlinks``:
 
 .. code-block:: python
 
-    INSTALLED_APPS = (
+    INSTALLED_APPS = [
         # ...
         'paginationlinks',
-    )
+    ]
 
 Usage
 -----
