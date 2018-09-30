@@ -1,6 +1,13 @@
+import django
 from django import template
 
 register = template.Library()
+
+
+if django.VERSION >= (1, 9):
+    assignment_tag = register.simple_tag
+else:
+    assignment_tag = register.assignment_tag
 
 
 class PageNumber(object):
@@ -20,7 +27,7 @@ class PageNumber(object):
         return self.number is None
 
 
-@register.assignment_tag
+@assignment_tag
 def get_pagination_links(paginator, page_obj, on_each_side=1, on_ends=1):
     page_num = page_obj.number - 1
 
