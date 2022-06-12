@@ -5,6 +5,12 @@ Small package for creating a list of page links from a Django paginator object,
 similar in style to the Django admin - showing the start and end pages, but
 only showing a limited list of pages in the middle.
 
+Deprecated
+----------
+
+As of Django 3.2 - the Paginator class now supports
+`elided page ranges <https://docs.djangoproject.com/en/3.2/releases/3.2/#pagination>`_.
+
 Installation
 ------------
 
